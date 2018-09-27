@@ -1,0 +1,315 @@
+:root {
+	--fontHeight: 200px;
+	--color: white;
+	--tri: 80px;
+	--test: red;
+	--backgroundColor: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#32d6ff+0,80eda0+100 */
+	background: #32d6ff;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #32d6ff 0%, #80eda0 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #32d6ff 0%, #80eda0 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #32d6ff 0%, #80eda0 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32d6ff', endColorstr='#80eda0', GradientType=0);
+	/* IE6-9 */
+	;
+}
+
+body {
+	background-color: var(--backgroundColor);
+}
+
+.letterwrap {
+	overflow: hidden;
+	min-height: 100px;
+	padding: 70px;
+}
+
+.letter {
+	float: left;
+	min-height: 100px;
+	width: 100px;
+	margin: 30px;
+}
+
+.test {
+	height: 300px;
+	width: 300px;
+	background-color: var(--test);
+}
+
+.letterGrid {
+	display: grid;
+	grid-template-columns: 50px 10fr 10fr;
+	grid-template-rows: 50px 10fr;
+}
+
+
+/*
+HELLO, THIS IS THE STYLE GUIDE FOR CLASS NAMES, BITCHES. 
+read this b4 u confuse urself. 
+
+T=TOP
+B=BOTTOM
+L=LEFT
+R=RIGHT
+D=DOWN
+U=UP
+
+//RIGHT TRAPEZOIDS//
+>> CONTAINS (2) RIGHT ANGLES IN SHAPE 
+>> NON-RIGHT ROTATIONES SHOULD INDICATE ROTATION DEG IN CLASS NAME
+U/D indicates point direction if right angle rotation
+L/R indicates position
+
+
+//STANDARD TRAPEZOID//
+>> NO RIGHT ANGLES CONTAINED IN SHAPE
+>> NON-RIGHT ROTATIONS SHOULD INDICATE ROTATION DEG IN CLASS NAME
+L/R indicates face direction
+L/R indicates position
+>> ALWAYS, FACE DIRECTION, THEN POSITION. IN THIS ORDER ONLY. 
+
+// TRIANGLES //
+T/B indicates position
+L/R indicates position
+U/D indicates point direction
+
+//SQUARES//
+T/B indicates position
+L/R indicates position
+
+*/
+
+.trapUL {
+	border-bottom: 25px solid var(--color);
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 50px;
+	transform: rotate(270deg);
+	float: left;
+	margin: -10px;
+}
+
+.trapUR {
+	border-top: 25px solid var(--color);
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 50px;
+	transform: rotate(270deg);
+	float: left;
+	margin: -10px;
+}
+
+.trapDL {
+	border-bottom: 25px solid var(--color);
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 50px;
+	transform: rotate(90deg);
+	float: left;
+	margin: -10px;
+}
+
+.trapDR {
+	border-top: 25px solid var(--color);
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 50px;
+	transform: rotate(90deg);
+	float: left;
+	margin: -10px;
+}
+
+.trap45 {
+	border-bottom: 25px solid var(--color);
+	border-right: 0px solid transparent;
+	border-left: 10px solid transparent;
+	height: 0;
+	width: 50px;
+	transform: rotate(135deg);
+	margin-left: -15px;
+	margin-top: -30px;
+}
+
+.trap45two {
+	border-top: 25px solid var(--color);
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 50px;
+	transform: rotate(135deg);
+	margin-left: -15px;
+	margin-top: 10px;
+}
+
+.triTRD {
+	position: relative;
+	float: left;
+	margin-left: 5px;
+	margin-top: -30px;
+	width: 0;
+	height: 0;
+	border-top: 25px solid var(--color);
+	border-right: 25px solid transparent;
+}
+
+.triBR {
+	position: relative;
+	float: left;
+	margin-left: 5px;
+	margin-top: 8px;
+	width: 0;
+	height: 0;
+	border-bottom: 25px solid var(--color);
+	border-left: 25px solid transparent;
+}
+
+
+}
+.triTDR {
+	position: relative;
+	float: left;
+	margin-left: 5px;
+	margin-top: -28px;
+	width: 0;
+	height: 0;
+	border-bottom: 25px solid var(--color);
+	border-left: 25px solid transparent;
+}
+.triTRU {
+	position: relative;
+	float: left;
+	margin-left: 5px;
+	margin-top: -28px;
+	width: 0;
+	height: 0;
+	border-top: 25px solid var(--color);
+	border-left: 25px solid transparent;
+}
+.triBRD {
+	position: relative;
+	float: left;
+	margin-left: 5px;
+	margin-top: 8px;
+	width: 0;
+	height: 0;
+	border-top: 25px solid var(--color);
+	border-right: 25px solid transparent;
+}
+.triBRU {
+	position: relative;
+	float: left;
+	margin-left: 5px;
+	margin-top: 3px;
+	width: 0;
+	height: 0;
+	border-bottom: 25px solid var(--color);
+	border-right: 25px solid transparent;
+}
+.triBLU {
+	position: relative;
+	float: left;
+	margin-right: 5px;
+	margin-top: 8px;
+	width: 0;
+	height: 0;
+	border-top: 25px solid var(--color);
+	border-left: 25px solid transparent;
+}
+.triBLD {
+	position: relative;
+	float: left;
+	margin-right: 5px;
+	margin-top: 8px;
+	width: 0;
+	height: 0;
+	border-bottom: 25px solid var(--color);
+	border-right: 25px solid transparent;
+}
+.triBRUp {
+	position: relative;
+	float: left;
+	margin-left: 5px;
+	margin-top: 8px;
+	width: 0;
+	height: 0;
+	border-top: 25px solid var(--color);
+	border-left: 25px solid transparent;
+}
+.sqBR {
+	position: absolute;
+	float: left;
+	width: 25px;
+	height: 25px;
+	background: var(--color);
+	margin-left: 45px;
+	margin-top: 7px;
+}
+.sqTR {
+	position: absolute;
+	float: left;
+	width: 25px;
+	height: 25px;
+	background: var(--color);
+	margin-left: 45px;
+	margin-top: -25px;
+}
+.strapRL {
+	border-bottom: 25px solid var(--color);
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	transform: rotate(270deg);
+	height: 0;
+	width: 40px;
+	position: relative;
+	float: left;
+	margin-left: 5px;
+	margin-top: -10px;
+	margin-right: -7px;
+}
+.strapLR {
+	border-bottom: 25px solid var(--color);
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	transform: rotate(90deg);
+	height: 0;
+	width: 40px;
+	position: relative;
+	float: left;
+	margin-left: -10px;
+	margin-top: -10px;
+	margin-right: -7px;
+}
+.paraLR {
+	width: 35px;
+	height: 57px;
+	-webkit-transform: skew(45deg);
+	-moz-transform: skew(45deg);
+	-o-transform: skew(45deg);
+	background: var(--color);
+	position: relative;
+	float: left;
+	margin-left: -10px;
+	margin-top: -30px;
+	margin-right: -7px;
+}
+.paraRL {
+	width: 35px;
+	height: 57px;
+	-webkit-transform: skew(135deg);
+	-moz-transform: skew(135deg);
+	-o-transform: skew(135deg);
+	background: var(--color);
+	position: relative;
+	float: left;
+	margin-left: 10px;
+	margin-top: -30px;
+	margin-right: -20px;
+}
