@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700i');
 
 body {
-	border-left: 100px white solid; 
-/*	margin-left: 90px; */
+	margin-left: 90px; 
 	text-align: left;
 	bottom: 0;
 	right: 0;
