@@ -140,11 +140,11 @@ a:after {
 	margin-top: -5%;
 	display: inline-grid;
 	margin-left: 50%;
-	max-width: 50%;
+	width: 50%;
 }
 
 .minorWrapper {
-	min-width: 500px;
+	min-width: 50%;
 }
 
 .smol {
