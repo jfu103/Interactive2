@@ -52,7 +52,7 @@ a {
 	padding: 20px; 
 	text-decoration: none;
 	color: white;
-	border-bottom: 3px white solid; 
+	border-bottom: 3px rgb(255, 255, 255, 0.5) solid; 
 /*
 	transition: ease .1s;
 	-webkit-transition: ease .1s;
@@ -81,6 +81,7 @@ a:after {
 }
 
 a:hover {
+	border-bottom: 3px rgb(255, 255, 255, 1) solid; 
 	color: white;
 }
 
