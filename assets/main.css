@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,500');
 
 body {
 	margin-left: 90px; 
@@ -28,9 +28,11 @@ h1 {
 	text-transform: uppercase;
 	font-size: 40px;
 	color: white;
-	letter-spacing: -2px;
+	letter-spacing: -.1ch;
 	float: left;
 	width: 100%;
+	font-weight: 500;
+	font-kerning: auto;
 }
 
 h2 {
@@ -42,16 +44,20 @@ h2 {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	padding: 20px;
+	font-weight: 400;
 }
 
 a {
 	font-family: 'Roboto', sans-serif;
-	text-transform: lowercase;
+	font-size: 10px;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: .5ch;
 	position: relative;
 	margin: 20px; 
 	padding: 20px; 
 	text-decoration: none;
-	color: white;
+	color: rgb(255, 255, 255, 0.5);
 	border-bottom: 3px rgb(255, 255, 255, 0.5) solid; 
 /*
 	transition: ease .1s;
@@ -83,6 +89,7 @@ a:after {
 a:hover {
 	border-bottom: 3px rgb(255, 255, 255, 1) solid; 
 	color: white;
+	opacity: 1;
 }
 
 a:hover:after {
@@ -133,6 +140,7 @@ a:after {
 	margin-top: -5%;
 	display: inline-grid;
 	margin-left: 50%;
+	max-width: 50%;
 }
 
 .minorWrapper {
@@ -141,6 +149,7 @@ a:after {
 
 .smol {
 	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 	text-transform: uppercase;
 	font-size: 8px;
 	color: white; 
