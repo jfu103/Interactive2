@@ -3,35 +3,44 @@
 	--color: white;
 	--tri: 80px;
 	--test: red;
-	--backgroundColor: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#32d6ff+0,80eda0+100 */
-	background: #32d6ff;
-	/* Old browsers */
-	background: -moz-linear-gradient(top, #32d6ff 0%, #80eda0 100%);
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #32d6ff 0%, #80eda0 100%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #32d6ff 0%, #80eda0 100%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32d6ff', endColorstr='#80eda0', GradientType=0);
-	/* IE6-9 */
-	;
+	--backgroundColor: black;
 }
 
+/*------------ BASIC SHIT*/
 body {
 	background-color: var(--backgroundColor);
+	cursor: pointer; 
+	margin-left: 20%;
+}
+
+.bodyCopy {
+	color: var(--color);
+	font-family: sans-serif;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-size: 15px;
 }
 
 .letterwrap {
 	overflow: hidden;
-	min-height: 100px;
-	padding: 70px;
 }
 
 .letter {
 	float: left;
 	min-height: 100px;
-	width: 100px;
+	width: 0px;
 	margin: 30px;
+	width: 10%; 
+}
+
+.bigWrap { 
+/*	width: 90%;*/
+	margin: 0 auto;
+}
+
+.headerwrap {
+	min-height: 25%;
+	background:transparent; 
 }
 
 .test {
@@ -46,10 +55,8 @@ body {
 	grid-template-rows: 50px 10fr;
 }
 
-
 /*
-HELLO, THIS IS THE STYLE GUIDE FOR CLASS NAMES, BITCHES. 
-read this b4 u confuse urself. 
+------------SHAPES CLASS NAME STYLE GUIDE
 
 T=TOP
 B=BOTTOM
@@ -94,8 +101,8 @@ L/R indicates position
 	margin: -10px;
 }
 
-.trapUR {
-	border-top: 25px solid var(--color);
+.trapULH1 {
+	border-bottom: 25px solid var(--color);
 	border-left: 0px solid transparent;
 	border-right: 10px solid transparent;
 	height: 0;
@@ -103,6 +110,77 @@ L/R indicates position
 	transform: rotate(270deg);
 	float: left;
 	margin: -10px;
+	-webkit-transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.trapULH2 {
+	border-bottom: 25px solid var(--color);
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 50px;
+	transform: rotate(270deg);
+	float: left;
+	margin: -10px;
+	-webkit-transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.trapULL {
+	border-bottom: 25px solid var(--color);
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 50px;
+	transform: rotate(270deg);
+	float: left;
+	margin: -10px;
+	-webkit-transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.trapULL2 {
+	border-bottom: 25px solid var(--color);
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 50px;
+	transform: rotate(270deg);
+	float: left;
+	margin: -10px;
+	-webkit-transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.trapUR {
+	border-top: 25px solid var(--color);
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 50px;
+	transform: rotate(270deg);
+	position: absolute;
+	margin-left: 30px;
+	margin-top: -10px;
+	-webkit-transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.trapURA {
+	border-top: 25px solid var(--color);
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 50px;
+	transform: rotate(270deg);
+	position: absolute;
+	margin-left: 30px;
+	margin-top: -10px;
+	-webkit-transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
 }
 
 .trapDL {
@@ -160,6 +238,31 @@ L/R indicates position
 	border-right: 25px solid transparent;
 }
 
+.triTRDL {
+	position: relative;
+	float: left;
+	margin-left: 5px;
+	margin-top: -30px;
+	width: 0;
+	height: 0;
+	border-top: 25px solid var(--color);
+	border-right: 25px solid transparent;
+}
+
+.triBRDE.o-version {
+	border-top: 25px solid var(--color);
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 50px;
+	transform: rotate(270deg);
+	position: absolute;
+	margin-left: 30px;
+	margin-top: -10px;
+	-webkit-transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 .triBR {
 	position: relative;
 	float: left;
@@ -172,7 +275,7 @@ L/R indicates position
 }
 
 
-}
+
 .triTDR {
 	position: relative;
 	float: left;
@@ -183,6 +286,7 @@ L/R indicates position
 	border-bottom: 25px solid var(--color);
 	border-left: 25px solid transparent;
 }
+
 .triTRU {
 	position: relative;
 	float: left;
@@ -193,6 +297,7 @@ L/R indicates position
 	border-top: 25px solid var(--color);
 	border-left: 25px solid transparent;
 }
+
 .triBRD {
 	position: relative;
 	float: left;
@@ -203,6 +308,29 @@ L/R indicates position
 	border-top: 25px solid var(--color);
 	border-right: 25px solid transparent;
 }
+
+.triBRDgone {
+	margin-left: 45px;
+	margin-top: 8px;
+	width: 0;
+	height: 0;
+	border-top: 25px solid var(--color);
+	border-right: 25px solid transparent;
+}
+
+
+.triBRDL2 {
+	margin-left: 45px;
+	margin-top: 8px;
+	width: 0;
+	height: 0;
+	border-top: 25px solid var(--color);
+	border-right: 25px solid transparent;
+	-webkit-transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	;
+}
+
 .triBRU {
 	position: relative;
 	float: left;
@@ -213,6 +341,7 @@ L/R indicates position
 	border-bottom: 25px solid var(--color);
 	border-right: 25px solid transparent;
 }
+
 .triBLU {
 	position: relative;
 	float: left;
@@ -223,6 +352,7 @@ L/R indicates position
 	border-top: 25px solid var(--color);
 	border-left: 25px solid transparent;
 }
+
 .triBLD {
 	position: relative;
 	float: left;
@@ -233,6 +363,7 @@ L/R indicates position
 	border-bottom: 25px solid var(--color);
 	border-right: 25px solid transparent;
 }
+
 .triBRUp {
 	position: relative;
 	float: left;
@@ -243,6 +374,7 @@ L/R indicates position
 	border-top: 25px solid var(--color);
 	border-left: 25px solid transparent;
 }
+
 .sqBR {
 	position: absolute;
 	float: left;
@@ -252,6 +384,7 @@ L/R indicates position
 	margin-left: 45px;
 	margin-top: 7px;
 }
+
 .sqTR {
 	position: absolute;
 	float: left;
@@ -261,6 +394,7 @@ L/R indicates position
 	margin-left: 45px;
 	margin-top: -25px;
 }
+
 .strapRL {
 	border-bottom: 25px solid var(--color);
 	border-left: 10px solid transparent;
@@ -274,6 +408,7 @@ L/R indicates position
 	margin-top: -10px;
 	margin-right: -7px;
 }
+
 .strapLR {
 	border-bottom: 25px solid var(--color);
 	border-left: 10px solid transparent;
@@ -287,6 +422,7 @@ L/R indicates position
 	margin-top: -10px;
 	margin-right: -7px;
 }
+
 .paraLR {
 	width: 35px;
 	height: 57px;
@@ -300,6 +436,7 @@ L/R indicates position
 	margin-top: -30px;
 	margin-right: -7px;
 }
+
 .paraRL {
 	width: 35px;
 	height: 57px;
@@ -312,4 +449,255 @@ L/R indicates position
 	margin-left: 10px;
 	margin-top: -30px;
 	margin-right: -20px;
+}
+
+/*------------EXTRANEOUS SHAPES*/
+
+.triO-add {
+	opacity: 0; 
+	-webkit-transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.triBRDL2 {
+	-webkit-transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.triTRDE {
+	position: relative;
+	float: left;
+	margin-left: 5px;
+	margin-top: -30px;
+	width: 0;
+	height: 0;
+	border-top: 25px solid var(--color);
+	border-right: 25px solid transparent;
+	-webkit-transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.triBRDE {
+	position: relative;
+	float: left;
+	margin-left: 5px;
+	margin-top: 8px;
+	width: 0;
+	height: 0;
+	border-top: 25px solid var(--color);
+	border-right: 25px solid transparent;
+	-webkit-transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.strapRLE {
+	border-bottom: 25px solid var(--color);
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	transform: rotate(270deg);
+	height: 0;
+	width: 40px;
+	position: relative;
+	float: left;
+	margin-left: 5px;
+	margin-top: -10px;
+	margin-right: -7px;
+	-webkit-transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.trapDRO {
+	border-top: 25px solid var(--color);
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 50px;
+	transform: rotate(90deg);
+	float: left;
+	margin: -10px;
+	-webkit-transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.trapURO {
+	border-top: 25px solid var(--color);
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 50px;
+	transform: rotate(270deg);
+	position: absolute;
+	margin-left: 30px;
+	margin-top: -10px;
+	-webkit-transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.triH-add {
+	opacity: 0;
+	-webkit-transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/*------------ANIMATIONS*/
+
+
+.trapDRO.alt-version {
+	border-bottom: 25px solid var(--color);
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 0px solid transparent;
+	max-height: 0;
+	max-width: 50px;
+	transform: rotate(270deg);
+	margin-top: -10px;
+	position: absolute;
+}
+
+.trapURO.alt2-version {
+	margin-left: 45px;
+	margin-top: -28px;
+	width: 0;
+	height: 0;
+	border-top: 25px solid var(--color);
+	border-left: 25px solid transparent;
+	border-bottom:none; 
+	border-right:none; 
+}
+
+.trapURA.a-version {
+	transform: rotate(270deg);
+	height: 0;
+	width: 40px;
+	position: absolute;
+	float: left;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	margin-left: 30px;
+	margin-top: -10px;
+}
+
+
+.triH-add.d-version {
+	position: absolute;
+	margin-left: 60px;
+	margin-top: -60px;
+	width: 0;
+	height: 0;
+	border-top: 25px solid var(--color);
+	border-right: 25px solid transparent;
+	border-bottom: none;
+	border-left:none; 
+	opacity: 1;
+}
+
+.trapULH2.b-version {
+	margin-left: 5px;
+	margin-top: 8px;
+	max-width: 0;
+	max-height: 0;
+	border-top: 25px solid var(--color);
+	border-right: 25px solid transparent;
+	border-bottom: none;
+	border-left: none;
+
+}
+
+.strapRLE.o-version {
+	border-bottom: 25px solid var(--color);
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 50px;
+	transform: rotate(270deg);
+	float: left;
+	margin: -10px;
+}
+
+.trapULL.o-version {
+	position: absolute;
+	margin-left: 5px;
+	margin-top: -30px;
+	max-height: 0;
+	max-width: 0;
+	border-top: 25px solid var(--color);
+	border-left: 25px solid transparent;
+	border-right: none;
+	border-bottom: none;
+}
+
+.triBRDgone.gone-version {
+	position: absolute;
+	margin-left: 80px;
+	margin-top: -28px;
+	width: 0;
+	height: 0;
+	border-top: 25px solid var(--color);
+	border-left: 25px solid transparent;
+	border-right: none;
+	-webkit-transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.triBRU.c-version {
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 3px;
+	width: 0;
+	height: 0;
+	border-bottom: 25px solid var(--color);
+	border-right: 25px solid transparent;
+	-webkit-transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.triBRDL.o-version {
+	border-top: 25px solid var(--color);
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 50px;
+	transform: rotate(270deg);
+	position: absolute;
+	margin-left: 30px;
+	margin-top: -10px;
+	-webkit-transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 2400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.triBRDL2.d-version {
+	margin-left: 60px;
+	margin-top: 8px;
+	width: 0;
+	height: 0;
+	border-top: 25px solid var(--color);
+	border-right: 25px solid transparent;
+
+}
+
+.trapULL2.d-version {
+	border-bottom: 25px solid var(--color);
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	transform: rotate(270deg);
+	height: 0;
+	width: 40px;
+	position: relative;
+	float: left;
+	margin-left: 5px;
+	margin-top: -10px;
+	margin-right: -7px;
+}
+
+.triO-add.r-version {
+	margin-left: 45px;
+	margin-top: 10px;
+	width: 0;
+	height: 0;
+	border-top: 25px solid var(--color);
+	border-left: 25px solid transparent;
+	position:absolute; 
+	opacity: 1; 
 }

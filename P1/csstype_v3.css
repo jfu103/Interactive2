@@ -28,7 +28,7 @@ body {
 	min-width: 100vw;
 	background-color: white;
 	position:relative;
-	float:left; 
+	float:left;
 }
 
 .letterwrap {
@@ -58,8 +58,8 @@ body {
 
 
 /*
-HELLO, THIS IS THE STYLE GUIDE FOR CLASS NAMES, BITCHES. 
-read this b4 u confuse urself. 
+HELLO, THIS IS THE STYLE GUIDE FOR CLASS NAMES, BITCHES.
+read this b4 u confuse urself.
 
 T=TOP
 B=BOTTOM
@@ -69,7 +69,7 @@ D=DOWN
 U=UP
 
 //RIGHT TRAPEZOIDS//
->> CONTAINS (2) RIGHT ANGLES IN SHAPE 
+>> CONTAINS (2) RIGHT ANGLES IN SHAPE
 >> NON-RIGHT ROTATIONES SHOULD INDICATE ROTATION DEG IN CLASS NAME
 U/D indicates point direction if right angle rotation
 L/R indicates position
@@ -80,7 +80,7 @@ L/R indicates position
 >> NON-RIGHT ROTATIONS SHOULD INDICATE ROTATION DEG IN CLASS NAME
 L/R indicates face direction
 L/R indicates position
->> ALWAYS, FACE DIRECTION, THEN POSITION. IN THIS ORDER ONLY. 
+>> ALWAYS, FACE DIRECTION, THEN POSITION. IN THIS ORDER ONLY.
 
 // TRIANGLES //
 T/B indicates position
