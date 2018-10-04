@@ -183,10 +183,10 @@ $(document).ready(function () {
 		var fourth = setInterval(secondL, 1200)
 
 		var fifth = setInterval(O, 1700)
-		
+
 		var delay = 5000;
 	setTimeout(function () {
-		window.location = 'csstypev3.html';
+		window.location = 'csstype_v3.html';
 	}, delay);
 
 		$('body').cursor("none");
@@ -194,6 +194,6 @@ $(document).ready(function () {
 
 	});
 
-	
+
 
 });
