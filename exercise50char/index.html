@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- 
+
+notes  
+
+	((CALL THE ELEMENT)) 
+		$('.class').click( function() {
+	((ANIMATE SAID ELEMENT))
+		$(this).animate({
+		etc etc})
+	
+		$(this).next('.item')
+	NEXT finds the next [thing] in the DOM
+	PREVIOUS finds previous [thing] in the DOM
+	
+	.toggleClass -- USEFUL!
+	
+	$('.class').mousemove( function() {
+	
+	var xPos = e.pageX-125; 
+	var yPos = e.pageY-125; 
+	
+	$(this).css({
+	'position': aboslute, 
+	'top': yPos+'px';})
+	^^ THIS CODE ADDS CSS. THEREFORE DONT FORGET PX, ETC, OTHER UNITS OF MEASUREMENT
+
+-->
+
+<head>
+    <title>50 Results Charrette</title>
+    <meta charset="utf-8" />
+    <!-- sets up iframes appearance -->
+    <link rel="stylesheet" href="shared_assets/main.css" type="text/css" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="person-1">
+            <!-- iframe links to person 1's files -->
+            <iframe src="person_1/index.html"></iframe>
+        </div>
+
+        <div id="person-2">
+            <!-- iframe links to person 1's files -->
+            <iframe src="person_2/index.html"></iframe>
+        </div>
+
+        <div id="person-3">
+            <!-- iframe links to person 1's files -->
+            <iframe src="person_3/index.html"></iframe>
+        </div>
+    </div>
+</body>
+</html>
