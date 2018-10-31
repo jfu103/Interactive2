@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,500');
 
 body {
-	margin-left: 90px; 
+	margin-left: 90px;
 	text-align: left;
 	bottom: 0;
 	right: 0;
@@ -16,13 +16,55 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd1e0', endColorstr='#9393fa', GradientType=0);
 }
 
+
+.hoverBox {
+	position: relative;
+    display: inline-block;
+}
+
+.hoverBox .hoverText {
+/*	visibility: hidden;*/
+    width: 120px;
+    background-color: white;
+	opacity: .5; 
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.hoverBox:hover .hoverText {
+ visibility: visible;
+    opacity: 1;
+}
+
+
+.hoverBox .hoverText::after {
+    content: "";
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
 div {
-padding: 5px; 
-	margin-bottom: 10px; 
+	padding: 5px;
+	margin-bottom: 10px;
 }
 
 h1 {
-	border-left: 100px rgb(255, 255, 255, 0) solid; 
+	border-left: 100px rgb(255, 255, 255, 0) solid;
 	padding-left: 10px;
 	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
@@ -54,12 +96,12 @@ a {
 	text-transform: uppercase;
 	letter-spacing: .5ch;
 	position: relative;
-	margin: 20px; 
-	padding: 20px; 
+	margin: 20px;
+	padding: 20px;
 	text-decoration: none;
 	color: rgb(255, 255, 255, 0.5);
-	border-bottom: 3px rgb(255, 255, 255, 0.5) solid; 
-/*
+	border-bottom: 3px rgb(255, 255, 255, 0.5) solid;
+	/*
 	transition: ease .1s;
 	-webkit-transition: ease .1s;
 */
@@ -81,20 +123,21 @@ a:after {
 	height: 0px;
 	background: white;
 	transition: ease .1s;
-	-webkit-transition: all  600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transition:  all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);;
+	-webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	;
 
 }
 
 a:hover {
-	border-bottom: 3px rgb(255, 255, 255, 1) solid; 
+	border-bottom: 3px rgb(255, 255, 255, 1) solid;
 	color: white;
 	opacity: 1;
 }
 
 a:hover:after {
 	height: 100%;
-	opacity: 0.4; 
+	opacity: 0.4;
 }
 
 /*
@@ -129,7 +172,7 @@ a:after {
 	position: relative;
 }
 
-.headerwrapper { 
+.headerwrapper {
 
 	display: inline;
 	float: left;
@@ -152,18 +195,18 @@ a:after {
 	font-weight: 300;
 	text-transform: uppercase;
 	font-size: 8px;
-	color: white; 
+	color: white;
 	margin-top: -30px;
-	margin-left: 10px; 
-	float: left; 
-	border-left: 100px transparent solid; 
+	margin-left: 10px;
+	float: left;
+	border-left: 100px transparent solid;
 }
 
 img {
-	float:left; 
+	float: left;
 }
 
 .imgwrap {
 	transform: translateX(-130px) translateY(-50px);
-	position:absolute;
+	position: absolute;
 }
