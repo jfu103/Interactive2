@@ -1,42 +1,99 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
 	<style>
 		.artwork {
-			max-height: 100vh;
+			width: 40vw;
 			display: block;
 			margin-left: 40vw;
-			margin-top: 5vh; 
+			margin-top: 10vh;
+			margin-bottom: 10vh; 
+
+			/*			scroll-snap-align: start;*/
 		}
 		
-		imgContainer{ 
+		.small {
+			margin-top: -40vh; 
+			margin-bottom: -40vh;
+			margin-left: 20vw; 
+			width: 10vw; 
+			
+		}
+
+		#imgContainer {
 			display: block;
-			margin: 50px; 
+			margin-bottom: 100px;
+			margin: auto;
+			/*			scroll-snap-points-y: repeat(300px);*/
+			text-align: center; 
 		}
-		
+
 		.baaa {
-			position:fixed;
-			max-width: 14vw; 
+			position: fixed;
+			max-width: 12vw;
 			opacity: .5;
-			bottom: 15vh; 
-			left: 5vw; 
+			bottom: 10vh;
+			left: 10vw;
 		}
-	
+
+		.captionFix {
+			position: fixed;
+			opacity: .5;
+			bottom: 5vh;
+			left: 12vw;
+			text-align: right;
+		}
+
+		.section {
+			height: 80vh;
+			width: auto;
+			margin-top: 50vh;
+			margin-bottom: 50vh; 
+		}
 	</style>
 </head>
 
 <body>
+<script type ="text/javascript" src="jquery-3.3.1.min.js"></script>
 
-
-<img src="assets/sheep.png" class="baaa">
-<div class="imgContainer">
-	<img class="artwork" src="assets/Screen%20Shot%202018-11-04%20at%203.51.19%20PM.png">
-	<img class="artwork" src="assets/Screen%20Shot%202018-11-04%20at%203.51.28%20PM.png">
+	<img src="assets/sheep.png" class="baaa">
+	<span class="captionFix">Wool for scale. </span>
+	<div id="imgContainer">
+		<div class="section"><img class="small" src="assets/01.png"></div>
+		<div class="section"><img class="artwork" src="assets/02.png"></div>
+		<div class="section"><img class="artwork" src="assets/03.png"></div>
+		<div class="section"><img class="artwork" src="assets/04.png"></div>
+		<div class="section"><img class="artwork" src="assets/05.png"></div>
+		<div class="section"><img class="small" src="assets/06.png"></div>
+		<div class="section"><img class="small" src="assets/07.png"></div>
+		<div class="section"><img class="artwork" src="assets/08.png"></div>
+		<div class="section"><img class="artwork" src="assets/09.png"></div>
 	</div>
 
+	<div class="labelContainer"></div>
+	<script>
+		//	SCROLL SNAP
+		
+		new fullpage('#imgContainer', {
+			//options
+			scrollingSpeed: 700,
+			easing: 'easeInOutCubic', 
+			loopBottom: true, 
+			dragAndMove: true, 
+			autoScrolling: true,
+			scrollHorizontally: true
+		});
+
+		fullpage_api.setAllowScrolling(true);
+	</script>
 </body>
+
 </html>
-<link rel="stylesheet" href="main.css"><script src="script.js"></script>
+<link rel="stylesheet" href="main.css"><link rel="stylesheet" type="text/css" href="assets/fullPage.js-master/src/fullpage.css"><script src="assets/fullPage.js-master/src/fullpage.js"></script>
+<script src="script.js"></script>
+<script src="assets/jquery-3.3.1.min.js"></script>
+

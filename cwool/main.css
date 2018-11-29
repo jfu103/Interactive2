@@ -1,0 +1,158 @@
+body {
+	font-size: 1vw;
+	font-family: "Baskerville", "Times New Roman", sans-serif;
+}
+
+h1 {
+	font-size: 200px;
+	font-family: "Tenby-Four";
+	font-weight: 600;
+	line-height: 25vh;
+	letter-spacing: .01em; 
+	text-align: justify; 
+}
+
+h1:hover {
+	font-family: "Tenby-Stencil";
+	font-weight: 100;
+	letter-spacing: .01em;
+}
+
+.h1Box {
+	max-width: 10vw;
+	width: 10vw;
+	margin: none;
+	position: fixed;
+	left: 10vw;
+	top: -10vh;
+	z-index: -2;
+}
+
+.h1Box2 {
+	max-width: 10vw;
+	width: 10vw;
+	margin: none;
+	position: fixed;
+	left: 60vw;
+	top: 300vh;
+	
+}
+
+
+h2 {
+	font-family: "Garamond", "Times New Roman", serif;
+	font-size: 20px;
+	font-weight: 500;
+	color: gray;
+	z-index: -2;
+	
+}
+
+.h2Box1 {
+	position: fixed;
+	left: 11vw;
+	top: -3vh;
+
+}
+
+.h2Box2 {
+	position: fixed;
+	left: 11vw;
+	bottom: 2vh;
+}
+
+.txtWrapper1 {
+	font-family: "Garamond", "Times New Roman", serif;
+	font-size: 35px;
+	font-weight: 500;
+	color: gray;
+	left: 60vw;
+	top: 1815px;
+	position: absolute;
+}
+
+
+.txtWrapper2 {
+	font-family: "Garamond", "Times New Roman", serif;
+	font-size: 35px;
+	font-weight: 500;
+	color: gray;
+	left: 50vw;
+	top: 2019px;
+	position: absolute;
+	width: 10vw;
+}
+
+.txtWrapper3 {
+	font-family: "Garamond", "Times New Roman", serif;
+	font-size: 15px;
+	font-weight: 300;
+	color: gray;
+	width: 30vw;
+	height: 1149px;
+	left: 376px;
+	top: 2180px;
+	position: absolute;
+}
+
+/*IMAGE SET*/
+.modContainer {
+	position: relative;
+}
+
+#mod1 {
+	max-width: 704px;
+	max-height: 1060px;
+}
+
+#mod2 {
+	max-width: 736px;
+	max-height: 1080px;
+}
+
+#mod3 {
+
+	max-width: 752px;
+	max-height: 1126px;
+}
+
+#mod4 {
+	max-width: 695px;
+	max-height: 961px;
+
+}
+
+#mod5 {
+	max-width: 698px;
+	max-height: 1030px;
+}
+
+#mod6 {
+
+	max-width: 750px;
+	max-height: 1130px;
+}
+
+
+/*BOXES*/
+
+.bgBox1 {
+	position: absolute;
+	width: 1070px;
+	height: 2974px;
+	background-color: #ffffff;
+	top: 1080px;
+	z-index: -1; 
+}
+
+
+/*LINKS*/
+
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: black
+}
