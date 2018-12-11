@@ -12,20 +12,19 @@
 			margin-left: 40vw;
 			margin-top: 10vh;
 			margin-bottom: 10vh; 
-
 			/*			scroll-snap-align: start;*/
 		}
 		
 		.small {
 			margin-top: -40vh; 
 			margin-bottom: -40vh;
-			margin-left: 20vw; 
+			margin-left: 40vw; 
 			width: 10vw; 
 			
 		}
 
 		#imgContainer {
-			display: block;
+			display: inline;
 			margin-bottom: 100px;
 			margin: auto;
 			/*			scroll-snap-points-y: repeat(300px);*/
@@ -40,6 +39,32 @@
 			left: 10vw;
 		}
 
+		.baaa2 {
+			content: url(assets/ladder.png);
+			position: fixed;
+			max-width: 16vw;
+			opacity: .5;
+			bottom: 10vh;
+			left: 10vw;
+		}
+/*
+		
+		#capContainer {
+			
+		}
+*/
+		
+		.des1 { 
+		opacity: .5;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+		}
+		.des1:hover {
+			opacity: 1; 
+		}
+		
 		.captionFix {
 			position: fixed;
 			opacity: .5;
@@ -47,53 +72,156 @@
 			left: 12vw;
 			text-align: right;
 		}
-
+		
+		.captionFix:after {
+			content: 'Living wool for scale.';
+		}
+			.captionFix2:after {
+			content: 'Nonliving stepladder for scale.';
+		}
+		
+		.captionFix2 {
+			position: fixed;
+			opacity: .5;
+			bottom: 5vh;
+			left: 12vw;
+			text-align: right;
+			content: "Dead ladder for scale.";
+		}
+		
+		.back {
+			
+			top: 2vh; 
+			text-align: left; 
+			float: left; 
+			position: fixed; 
+			left: 2vh; 
+			opacity: .5; 
+			
+		}
+		
 		.section {
 			height: 80vh;
 			width: auto;
-			margin-top: 50vh;
+/*			margin-top: 50vh;*/
 			margin-bottom: 50vh; 
+			text-align:left;
 		}
+		
+		.img { 
+			position: relative;
+			text-align: left; 
+			left: 10vw; 
+		}
+		
+		.bgBox3 {
+			background-color: white;
+			width: 50vw; 
+			height: 2000px; 
+			z-index: 
+		}
+		
+		
+		
 	</style>
 </head>
 
+<link rel="stylesheet" href="main.css">
+
 <body>
-<script type ="text/javascript" src="jquery-3.3.1.min.js"></script>
+
+
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+
+
+	<!--
+	<div class="bgBox3"></div>
+	<div class="h1Box2">
+		<h1><a href="index.html">
+				BACK
+				KTO
+				HME</a></h1>
+	</div>
+--><div class="back"><a href="index.html">back to home</a></div>
 
 	<img src="assets/sheep.png" class="baaa">
-	<span class="captionFix">Wool for scale. </span>
 	<div id="imgContainer">
-		<div class="section"><img class="small" src="assets/01.png"></div>
-		<div class="section"><img class="artwork" src="assets/02.png"></div>
-		<div class="section"><img class="artwork" src="assets/03.png"></div>
-		<div class="section"><img class="artwork" src="assets/04.png"></div>
-		<div class="section"><img class="artwork" src="assets/05.png"></div>
-		<div class="section"><img class="small" src="assets/06.png"></div>
-		<div class="section"><img class="small" src="assets/07.png"></div>
-		<div class="section"><img class="artwork" src="assets/08.png"></div>
-		<div class="section"><img class="artwork" src="assets/09.png"></div>
+		<div class="section" "des1"><img class="small" "01" src="assets/01.png"></div>
+		<div class="section" "des1" id="switch1"><img class="artwork" "02" src="assets/02.png"></div>
+		<div class="section" "des1"><img class="artwork" "03" src="assets/03.png"></div>
+		<div class="section" "des1"><img class="artwork" "04" id="switch2" src="assets/04.png"></div>
+		<div class="section" "des1"><img class="artwork" "05" src="assets/05.png"></div>
+		<div class="section" "des1"><img class="small" "06" src="assets/06.png"></div>
+		<div class="section" "des1"><img class="small" "07" id="switch3" src="assets/07.png"></div>
+		<div class="section" "des1"><img class="artwork" "08" src="assets/08.png"></div>
+		<div class="section" "des1"><img class="artwork" "09" src="assets/09.png"></div>
 	</div>
+<div class="captionFix"></div>
+	
+
+<!--	<div id="capContainer"></div>-->
+
+	<!--	<a href="index.html">back to home</a>-->
+
 
 	<div class="labelContainer"></div>
+	<script src="assets/jquery-3.3.1.min.js"></script>
 	<script>
 		//	SCROLL SNAP
-		
-		new fullpage('#imgContainer', {
-			//options
-			scrollingSpeed: 700,
-			easing: 'easeInOutCubic', 
-			loopBottom: true, 
-			dragAndMove: true, 
-			autoScrolling: true,
-			scrollHorizontally: true
-		});
 
-		fullpage_api.setAllowScrolling(true);
+		//		new fullpage('#imgContainer', {
+		//			//options
+		//			scrollingSpeed: 700,
+		//			easing: 'easeInOutCubic', 
+		//			loopBottom: true, 
+		//			dragAndMove: true, 
+		//			autoScrolling: true,
+		//			scrollHorizontally: true
+		//		});
+		//
+		//		fullpage_api.setAllowScrolling(true);
+
+		// switch out sheep
+
+		var switch1 = $('#switch1').offset().top;
+		var switch2 = $('#switch2').offset().top;
+		var switch3 = $('#switch3').offset().top;
+
+
+
+		//		var interval= setInterval(function() {
+		$(window).scroll(function(event) {
+
+			if ($(window).scrollTop() >= switch1) {
+				//				console.log(switch1);
+				//				alert("h*ck! i work!");
+				//				clearInterval(interval);
+				$('.baaa').removeClass('baaa').addClass('baaa2');
+				$('.captionFix').removeClass('captionFix').addClass('captionFix2');
+				
+			}
+
+
+			if ($(window).scrollTop() >= switch2) {
+				$('.captionFix2').removeClass('captionFix2').addClass('captionFix');
+
+				$('.baaa2').removeClass('baaa2').addClass('baaa');
+			}
+
+
+			if ($(window).scrollTop() >= switch3) {
+				$('.captionFix').removeClass('captionFix').addClass('captionFix2');
+
+				$('.baaa').removeClass('baaa').addClass('baaa2');
+			}
+
+		});
+		
+		
+		//}, 250);
 	</script>
 </body>
 
 </html>
-<link rel="stylesheet" href="main.css"><link rel="stylesheet" type="text/css" href="assets/fullPage.js-master/src/fullpage.css"><script src="assets/fullPage.js-master/src/fullpage.js"></script>
-<script src="script.js"></script>
-<script src="assets/jquery-3.3.1.min.js"></script>
-
+<!--<script src="assets/fullPage.js-master/src/fullpage.js"></script>-->
+<!--<script src="script.js"></script>-->
